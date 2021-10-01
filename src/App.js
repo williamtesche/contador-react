@@ -18,9 +18,15 @@ export default function App() {
       <div className="container">
         <div className="inner-container">
           <h1>COUNTER</h1>
-          <button onClick={less}>diminuir</button>
+
           <span>{number}</span>
-          <button onClick={plus}>almentar</button>
+          <br />
+          <button className="button1" onClick={less}>
+            diminuir
+          </button>
+          <button className="button2" onClick={plus}>
+            aumentar
+          </button>
         </div>
       </div>
     </>
