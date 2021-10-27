@@ -6,11 +6,14 @@ export default function App() {
   const [number, setNumber] = useState(0);
 
   function less() {
-    setNumber(number - 1);
+    setNumber(number - 1)
   }
 
   function plus() {
-    setNumber(number + 1);
+    setNumber(number + 1)
+  }
+  function reset () {
+    setNumber(0)
   }
 
   return (
@@ -19,13 +22,16 @@ export default function App() {
         <div className="inner-container">
           <h1>COUNTER</h1>
 
-          <span>{number}</span>
+          <span id="n">{number}</span>
           <br />
           <button className="button1" onClick={less}>
-            diminuir
+            diminuir {number - 1}
           </button>
           <button className="button2" onClick={plus}>
-            aumentar
+            aumentar {number + 1}
+          </button>
+          <button className="button2" onClick={reset}>
+            Zerar 0
           </button>
         </div>
       </div>
